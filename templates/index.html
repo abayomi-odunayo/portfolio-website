@@ -1,0 +1,367 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Navigation -->
+<nav class="navbar">
+    <li><a href="#blog">Blog</a></li>
+    <div class="logo">Abayomi Odunayo</div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="darkModeBtn" class="dark-btn">
+    🌙 Dark Mode
+</button>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Abayomi Odunayo Stephen</span></h1>
+
+            <h2 class="typing">Python & Flask Developer</h2>
+
+            <p>
+                I build modern, responsive, and user-friendly web applications
+                using Python, Flask, HTML, CSS, JavaScript, SQL, Git, and GitHub.
+                I am passionate about solving real-world problems with technology.
+            </p>
+
+            <a href="#projects" class="btn">View My Projects</a>
+
+            <a href="{{ url_for('static', filename='resume/Abayomi_Odunayo_Resume.pdf') }}"
+               class="btn"
+               download>
+               Download Resume
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='images/profile_1.jpg') }}" alt="Profile Photo">
+        </div>
+
+    </div>
+
+</section>
+<!-- About Section -->
+<section id="about" class="about">
+
+    <h2>About Me</h2>
+
+    <div class="about-content">
+
+        <div class="about-image">
+            <!-- Add your photo later if you want -->
+            <img src="{{ url_for('static', filename='images/profile_2.jpg') }}" alt="Profile Photo">
+        </div>
+
+        <div class="about-text">
+            <p>
+                Hello! I'm <strong>Abayomi Odunayo</strong>, a passionate Python developer with an interest in building modern and user-friendly web applications.
+            </p>
+
+            <p>
+                I enjoy working with Flask, HTML, CSS, JavaScript, SQL, Git, and GitHub. I am also expanding my knowledge in Data Science and Machine Learning by building practical projects.
+            </p>
+
+            <p>
+                My goal is to become a professional software developer who creates reliable, secure, and scalable applications.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Education Section -->
+<section id="education" class="education">
+
+    <h2>Education</h2>
+
+    <div class="education-card">
+        <h3>Computer Engineering</h3>
+        <p><strong>Institution:</strong> The Polytechnic of Ibadan</p>
+        <p><strong>Status:</strong> Student</p>
+        <p>
+            Studying software development, databases, networking,
+            algorithms, and programming.
+        </p>
+    </div>
+
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="experience">
+
+    <h2>Experience</h2>
+
+    <div class="experience-card">
+        <h3>Python & Flask Developer</h3>
+        <p><strong>2025 – Present</strong></p>
+
+        <p>
+            Building web applications using Python, Flask, HTML, CSS,
+            JavaScript, SQL, Git, and GitHub.
+        </p>
+
+        <ul>
+            <li>Developed a Telecom website using Flask.</li>
+            <li>Built a personal portfolio website.</li>
+            <li>Learning Data Science and Machine Learning with Python.</li>
+            <li>Practicing database design with SQL.</li>
+        </ul>
+    </div>
+
+</section>
+
+<!-- Certificates Section -->
+<section id="certificates" class="certificates">
+
+    <h2>Certificates</h2>
+
+    <div class="certificate-container">
+
+        <div class="certificate-card">
+            <h3>Python Programming</h3>
+            <p>Certificate will be added after completion.</p>
+        </div>
+
+        <div class="certificate-card">
+            <h3>Flask Web Development</h3>
+            <p>Certificate will be added after completion.</p>
+        </div>
+
+        <div class="certificate-card">
+            <h3>Data Science</h3>
+            <p>Certificate will be added after completion.</p>
+        </div>
+
+        <div class="certificate-card">
+            <h3>Machine Learning</h3>
+            <p>Certificate will be added after completion.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="skills" class="skills">
+
+    <h2>My Skills</h2>
+
+    <div class="skill">
+
+        <p>Python</p>
+        <div class="progress">
+            <div class="progress-bar python">90%</div>
+        </div>
+
+        <p>Flask</p>
+        <div class="progress">
+            <div class="progress-bar flask">85%</div>
+        </div>
+
+        <p>HTML & CSS</p>
+        <div class="progress">
+            <div class="progress-bar htmlcss">90%</div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="progress">
+            <div class="progress-bar js">75%</div>
+        </div>
+
+        <p>SQL</p>
+        <div class="progress">
+            <div class="progress-bar sql">80%</div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+
+    <h2>My Services</h2>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <h3>Python Development</h3>
+            <p>I build reliable Python applications for automation, data processing, and backend systems.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Flask Web Development</h3>
+            <p>I create responsive and secure web applications using Flask, HTML, CSS, JavaScript, and SQL.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Database Design</h3>
+            <p>I design and manage SQL databases with efficient queries and secure data storage.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Machine Learning</h3>
+            <p>I am developing machine learning solutions using Python libraries such as NumPy and Scikit-learn.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+
+    <h2>My Projects</h2>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+
+            <img src="{{ url_for('static', filename='images/Telecom-Home-page.png') }}"
+                 alt="Telecom Website">
+
+            <h3>Telecom Website</h3>
+
+            <p>
+                A modern telecom website built with Flask, HTML, CSS,
+                JavaScript, and SQL.
+            </p>
+
+            <p><strong>Technologies:</strong> Python, Flask, HTML, CSS, JavaScript, SQL</p>
+
+            <div class="project-buttons">
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn">GitHub</a>
+            </div>
+
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+
+            <img src="{{ url_for('static', filename='images/portfolio-home.png') }}"
+                 alt="Portfolio Website">
+
+            <h3>Portfolio Website</h3>
+
+            <p>
+                A personal portfolio website showcasing my skills,
+                education, experience, projects, and contact information.
+            </p>
+
+            <p><strong>Technologies:</strong> Python, Flask, HTML, CSS, JavaScript</p>
+
+            <div class="project-buttons">
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn">GitHub</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Resume Section -->
+<section id="resume" class="resume">
+
+    <h2>My Resume</h2>
+
+    <p>
+        Download my resume to learn more about my education, skills,
+        and experience.
+    </p>
+
+    <a href="{{ url_for('static', filename='resume/Abayomi_Odunayo_Resume.pdf') }}"
+       class="btn"
+       download>
+       Download Resume
+    </a>
+
+</section>
+
+<!-- Blog Section -->
+<section id="blog" class="blog">
+
+    <h2>Latest Articles</h2>
+
+    <div class="blog-container">
+
+        <div class="blog-card">
+            <h3>My Journey Learning Python</h3>
+            <p>
+                I started learning Python to build software that solves real-world
+                problems. Today, I'm developing Flask web applications and exploring
+                machine learning.
+            </p>
+        </div>
+
+        <div class="blog-card">
+            <h3>Building My Telecom Website</h3>
+            <p>
+                One of my favorite projects is a telecom website built with Flask,
+                HTML, CSS, JavaScript, and SQL. It has helped me improve my backend
+                and frontend development skills.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<p><strong>Email:</strong> abayomiodunayo0@gmail.com</p>
+
+<p><strong>Phone:</strong> +234 9012559753</p>
+
+<p><strong>Location:</strong> Nigeria</p>
+
+<p>
+    <strong>GitHub:</strong>
+    <a href="https://github.com/abayomi-odunayo" target="_blank">
+        github.com/abayomi-odunayo
+    </a>
+</p>
+
+<!--<p>-->
+<!--    <strong>LinkedIn:</strong>-->
+<!--    <a href="#" target="_blank">-->
+<!--        Add your LinkedIn profile here-->
+<!--    </a>-->
+<!--</p>-->
+
+<!-- Footer -->
+<footer class="footer">
+
+    <h3>Abayomi Odunayo</h3>
+
+    <p>Python Developer | Flask Developer | Machine Learning Enthusiast</p>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <p class="copyright">
+        &copy; 2026 Abayomi Odunayo. All Rights Reserved.
+    </p>
+
+</footer>
+
+{% endblock %}
