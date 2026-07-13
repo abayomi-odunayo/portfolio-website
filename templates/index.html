@@ -223,35 +223,42 @@
 
 </section>
 
-<!--                    PROJECT SECTION-->
-<!-- ABC Telecom -->
-<div class="col-md-4 mb-4">
-    <div class="card h-100 shadow">
+<!-- PROJECTS -->
+<section id="projects" class="container my-5">
 
-        <img src="{{ url_for('static', filename='images/telecom.png') }}" class="card-img-top" alt="ABC Telecom">
+    <h2 class="text-center mb-5">My Projects</h2>
 
-        <div class="card-body">
+    <div class="row">
 
-            <h4>ABC Telecom</h4>
+        <!-- ABC Telecom -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
 
-            <p>
-                A telecom service web application built with Flask that allows users to register, log in, manage their wallets, and purchase airtime.
-            </p>
+                <img src="{{ url_for('static', filename='images/telecom.png') }}" class="card-img-top" alt="ABC Telecom">
 
-            <p><strong>Python • Flask • SQLite • Bootstrap</strong></p>
+                <div class="card-body">
 
-            <a href="https://github.com/abayomi-odunayo/ABCTelecom" target="_blank" class="btn btn-dark">
-                GitHub
-            </a>
+                    <h4>ABC Telecom</h4>
 
-            <a href="https://odunayo-abctelecom.onrender.com" target="_blank" class="btn btn-primary">
-                Live Demo
-            </a>
+                    <p>
+                        A telecom service web application built with Flask that allows users to register, log in, manage their wallets, and purchase airtime.
+                    </p>
 
+                    <p><strong>Python • Flask • SQLite • Bootstrap</strong></p>
+
+                    <a href="https://github.com/abayomi-odunayo/ABCTelecom" target="_blank" class="btn btn-dark">
+                        GitHub
+                    </a>
+
+                    <a href="https://odunayo-abctelecom.onrender.com" target="_blank" class="btn btn-primary">
+                        Live Demo
+                    </a>
+
+                </div>
+
+            </div>
         </div>
 
-    </div>
-</div>
         <!-- E-commerce Website -->
         <div class="col-md-4 mb-4">
             <div class="card h-100 shadow">
@@ -313,6 +320,9 @@
     </div>
 
 </section>
+
+
+
 
 <!-- Resume Section -->
 <section id="resume" class="resume">
@@ -399,6 +409,34 @@
         &copy; 2026 Abayomi Odunayo. All Rights Reserved.
     </p>
 
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>If you'd like to work with me or discuss a project, feel free to contact me.</p>
+
+    <p><strong>Email:</strong> abayomiodunayo0@gmail.com</p>
+
+    <p><strong>Phone:</strong> +234 9012559753</p>
+
+    <p><strong>Location:</strong> Nigeria</p>
+
+    <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/abayomi-odunayo" target="_blank">
+            github.com/abayomi-odunayo
+        </a>
+    </p>
+
+    <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank">
+            Visit my LinkedIn
+        </a>
+    </p>
+
+</section>
 </footer>
 
 {% endblock %}
