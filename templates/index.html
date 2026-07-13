@@ -223,60 +223,103 @@
 
 </section>
 
-<!-- Projects Section -->
-<section id="projects" class="projects">
+<section id="projects" class="container my-5">
 
-    <h2>My Projects</h2>
+    <h2 class="text-center mb-5">My Projects</h2>
 
-    <div class="projects-container">
+    <div class="row">
 
-        <!-- Project 1 -->
-        <div class="project-card">
+        <!-- ABC Telecom -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
 
-            <img src="{{ url_for('static', filename='images/Telecom-Home-page.png') }}"
-                 alt="Telecom Website">
+                <img src="{{ url_for('static', filename='images/telecom.png') }}" class="card-img-top" alt="ABC Telecom">
 
-            <h3>Telecom Website</h3>
+                <div class="card-body">
 
-            <p>
-                A modern telecom website built with Flask, HTML, CSS,
-                JavaScript, and SQL.
-            </p>
+                    <h4>ABC Telecom</h4>
 
-            <p><strong>Technologies:</strong> Python, Flask, HTML, CSS, JavaScript, SQL</p>
+                    <p>
+                        A telecom service web application built with Flask that allows users to register, log in, manage their wallets, and purchase airtime.
+                    </p>
 
-            <div class="project-buttons">
-                <a href="#" class="btn">Live Demo</a>
-                <a href="#" class="btn">GitHub</a>
+                    <p><strong>Python • Flask • SQLite • Bootstrap</strong></p>
+
+                    <a href="https://github.com/abayomi-odunayo/ABCTelecom" target="_blank" class="btn btn-dark">
+                        GitHub
+                    </a>
+
+                    <a href=https://odunayo-abctelecom.onrender.com" target="_blank" class="btn btn-primary">
+                        Live Demo
+                    </a>
+
+                </div>
+
             </div>
-
         </div>
 
-        <!-- Project 2 -->
-        <div class="project-card">
+        <!-- E-commerce Website -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
 
-            <img src="{{ url_for('static', filename='images/portfolio-home.png') }}"
-                 alt="Portfolio Website">
+                <img src="{{ url_for('static', filename='images/ecommerce.png') }}" class="card-img-top" alt="E-commerce Website">
 
-            <h3>Portfolio Website</h3>
+                <div class="card-body">
 
-            <p>
-                A personal portfolio website showcasing my skills,
-                education, experience, projects, and contact information.
-            </p>
+                    <h4>E-commerce Website</h4>
 
-            <p><strong>Technologies:</strong> Python, Flask, HTML, CSS, JavaScript</p>
+                    <p>
+                        An online shopping website with user authentication, product management, shopping cart, and SQLite database.
+                    </p>
 
-            <div class="project-buttons">
-                <a href="#" class="btn">Live Demo</a>
-                <a href="#" class="btn">GitHub</a>
+                    <p><strong>Python • Flask • SQLite • Bootstrap</strong></p>
+
+                    <a href="https://github.com/abayomi-odunayo/ECommerceWebsite" target="_blank" class="btn btn-dark">
+                        GitHub
+                    </a>
+
+                    <a href="https://ecommercewebsite-qpu2.onrender.com" target="_blank" class="btn btn-primary">
+                        Live Demo
+                    </a>
+
+                </div>
+
             </div>
+        </div>
 
+        <!-- Student Management System -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
+
+                <img src="{{ url_for('static', filename='images/student-management.png') }}" class="card-img-top" alt="Student Management System">
+
+                <div class="card-body">
+
+                    <h4>Student Management System</h4>
+
+                    <p>
+                        A professional Student Management System built with Flask featuring user authentication, CRUD operations, student search, dashboard, and passport photo upload.
+                    </p>
+
+                    <p><strong>Python • Flask • SQLite • Bootstrap</strong></p>
+
+                    <a href="https://github.com/abayomi-odunayo/StudentManagementSystem" target="_blank" class="btn btn-dark">
+                        GitHub
+                    </a>
+
+                    <a href="https://studentmanagementsystem-bpxi.onrender.com" target="_blank" class="btn btn-primary">
+                        Live Demo
+                    </a>
+
+                </div>
+
+            </div>
         </div>
 
     </div>
 
 </section>
+
 <!-- Resume Section -->
 <section id="resume" class="resume">
 
